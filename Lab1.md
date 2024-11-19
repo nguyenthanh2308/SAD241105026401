@@ -204,8 +204,11 @@ Các lớp được phân tích rõ ràng với nhiệm vụ, thuộc tính, và
 Quan hệ giữa các lớp đảm bảo tính liên kết và chức năng của hệ thống.
 
 5. Tài liệu mô tả phân tích hệ thống
+
 5.1 Giới thiệu
+
 Tài liệu này hợp nhất kết quả phân tích của hai ca sử dụng Payment và Maintain Timecard để tạo ra một mô hình tổng thể. Hệ thống hỗ trợ quản lý thanh toán và thông tin timecard của nhân viên một cách hiệu quả.
+
 5.2 Các lớp phân tích
 Dựa trên hai ca sử dụng, các lớp phân tích chính bao gồm:
  * Employee:
@@ -235,19 +238,19 @@ Biểu đồ lớp kết hợp cả hai ca sử dụng.
 ![Diagram](https://www.planttext.com/api/plantuml/png/Z5JRIiD047tVhyXZ1FC3HKgrAWeAOWMVfycOhkubxauAGVmo7_maVy6T9ccpJGjzIPZBddFcp2P_FxypJ-2eraha2hnFRdIbR8EOV8aaIR2Bxej9iY0dJSbP0ng7iSFF6ZrTvYIjIM7pwkjdasHjPI6-HKVm8ZNcu8gMWBee9YY00i5rU7AqihNphzPzO6YwLHQ8ivMpxvZJt1QH5WzhJ7lI4DSLWwL7PTo1AHIwJeq3urlziQ1W4jL-c0dqENhVmwHZfywJmqw4msz8-UffDu1dVG_IqqNREjtfxBeUmK296Wqj6a-eMxq33tm4mCKIwKGAQ1ZuD2UgjdanCiJNIosfmqf1szfGjwwH-LTIgN1iECeof6Ac288JQr2IbycdUPgbjGh13BRHim-AMyuvto9ynZ9uu8076z9lDh817Yyoe75bSp6bhnGqlO9-gkr7asNx5okgnKwB_JkOPTDZ-pxOs-V4tWQv5baiOiEvVimECKDJyE_W7m00__y30000)
 
 5.5 Nhiệm vụ và quan hệ giữa các lớp
-Employee:
+ * Employee:
 Tương tác với cả TimecardHandler và PaymentHandler để gửi yêu cầu liên quan đến timecard và thanh toán.
-TimecardHandler:
+ * TimecardHandler:
 Chịu trách nhiệm xử lý thông tin timecard, kết nối với ProjectManagementSystem và Timecard.
-PaymentHandler:
+ * PaymentHandler:
 Quản lý các giao dịch thanh toán, tương tác với BillingSystem.
-BillingSystem:
+ * BillingSystem:
 Xác thực hóa đơn, xử lý thanh toán và nhận thông tin từ CourseRegistrationSystem.
-ProjectManagementSystem:
+ * ProjectManagementSystem:
 Cung cấp mã dự án cho timecard.
 
 5.6 Tổng kết
 Hệ thống hỗ trợ:
-Quản lý thanh toán liên quan đến các khóa học.
-Cập nhật, chỉnh sửa, và duy trì thông tin timecard.
-Kết nối các thành phần khác nhau để đảm bảo tính toàn vẹn dữ liệu và hiệu suất hoạt động.
+* Quản lý thanh toán liên quan đến các khóa học.
+* Cập nhật, chỉnh sửa, và duy trì thông tin timecard.
+* Kết nối các thành phần khác nhau để đảm bảo tính toàn vẹn dữ liệu và hiệu suất hoạt động.
