@@ -1,4 +1,3 @@
-
 1. Phân tích kiến trúc hệ thống
 1.1 Kiến trúc đề xuất:
 Mô hình Client-Server kết hợp với kiến trúc 3 lớp (Three-tier architecture):
@@ -103,10 +102,10 @@ Sử dụng công cụ logging như Log4j để ghi lại các thao tác như đ
 3. Phân tích ca sử dụng Payment
 
 3.1 Mô tả ca sử dụng
-Mục tiêu: Hệ thống xử lý việc thanh toán tiền học phí của sinh viên. Ca sử dụng này bao gồm:
-Hệ thống tính toán số tiền cần thanh toán dựa trên lịch đăng ký khóa học của sinh viên.
-Gửi thông tin đến hệ thống thanh toán hoặc phát hành hóa đơn.
-Xác nhận thanh toán thành công.
+* Mục tiêu: Hệ thống xử lý việc thanh toán tiền học phí của sinh viên. Ca sử dụng này bao gồm:
+* Hệ thống tính toán số tiền cần thanh toán dựa trên lịch đăng ký khóa học của sinh viên.
+* Gửi thông tin đến hệ thống thanh toán hoặc phát hành hóa đơn.
+* Xác nhận thanh toán thành công.
 
 3.2 Các lớp phân tích
 Dựa trên ca sử dụng, các lớp phân tích được xác định như sau:
@@ -149,12 +148,13 @@ Biểu đồ lớp thể hiện các thuộc tính, phương thức và quan h�
 ![Diagram](https://www.planttext.com/api/plantuml/png/T591JiCm4Bpx5JwMGpwG0wf0Gd13v0MRU5jMijULTrqfGhoC0q_Y2zXDWvAM7ZspdjaP--VhUoiAINFmPl0WOZlD3bdjXx7ModHuSMt14_6-WWSOGmLv5vSmCIc1ukj4R-vQUupapASvAp_6d0JVS4-Y2PGYTwCeXibgXpgyFv3tcolJebI9EkL83Xx6qzoLGKNB-5ArBz1wUmWnixRsoKVG2Xp1aojxpvfzZ1w1JqbJ751aaMWc_ppFt3EmyvWcqvAE1OQQyD_cEWNDiYGazu5qzbcjk4WvFqtJtEpIt2ovN5hrOousRvhxYu4jigl_uXS00F__0m00)
 
 4. Phân tích ca sử dụng: Maintain Timecard
+
 4.1 Xác định các lớp phân tích
 Các lớp liên quan đến ca sử dụng này bao gồm:
- -Employee: Người thực hiện thêm, sửa, hoặc xóa thông tin timecard.
- -Timecard: Biểu thị thông tin thời gian làm việc của nhân viên.
- -TimecardHandler: Xử lý các thao tác thêm, sửa, xóa timecard.
- -ProjectManagementSystem: Hệ thống cung cấp danh sách các mã dự án (charge numbers).
+ * Employee: Người thực hiện thêm, sửa, hoặc xóa thông tin timecard.
+ * Timecard: Biểu thị thông tin thời gian làm việc của nhân viên.
+ * TimecardHandler: Xử lý các thao tác thêm, sửa, xóa timecard.
+ * ProjectManagementSystem: Hệ thống cung cấp danh sách các mã dự án (charge numbers).
 
 4.2 Biểu đồ Sequence
 Biểu đồ Sequence mô tả hành vi khi nhân viên duy trì timecard.
