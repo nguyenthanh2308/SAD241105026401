@@ -101,6 +101,7 @@ Lưu lại các thao tác quan trọng để kiểm tra và xử lý sự cố s
 Sử dụng công cụ logging như Log4j để ghi lại các thao tác như đăng nhập, đăng ký khóa học, hoặc cập nhật điểm.
 
 3. Phân tích ca sử dụng Payment
+
 3.1 Mô tả ca sử dụng
 Mục tiêu: Hệ thống xử lý việc thanh toán tiền học phí của sinh viên. Ca sử dụng này bao gồm:
 Hệ thống tính toán số tiền cần thanh toán dựa trên lịch đăng ký khóa học của sinh viên.
@@ -109,11 +110,11 @@ Xác nhận thanh toán thành công.
 
 3.2 Các lớp phân tích
 Dựa trên ca sử dụng, các lớp phân tích được xác định như sau:
-Student:	Đại diện cho sinh viên, chứa thông tin cá nhân và danh sách khóa học đã đăng ký.
-Course:	Đại diện cho khóa học, chứa thông tin về học phí và thời gian.
-PaymentProcessor:	Lớp xử lý thanh toán, tính toán học phí, kiểm tra số dư, và gửi thông tin tới hệ thống thanh toán.
-Invoice:	Đại diện cho hóa đơn thanh toán, chứa thông tin chi tiết về số tiền cần thanh toán và trạng thái.
-BillingSystem:	Hệ thống thanh toán bên ngoài, xử lý giao dịch thanh toán.
+* Student:	Đại diện cho sinh viên, chứa thông tin cá nhân và danh sách khóa học đã đăng ký.
+* Course:	Đại diện cho khóa học, chứa thông tin về học phí và thời gian.
+* PaymentProcessor:	Lớp xử lý thanh toán, tính toán học phí, kiểm tra số dư, và gửi thông tin tới hệ thống thanh toán.
+* Invoice:	Đại diện cho hóa đơn thanh toán, chứa thông tin chi tiết về số tiền cần thanh toán và trạng thái.
+* BillingSystem:	Hệ thống thanh toán bên ngoài, xử lý giao dịch thanh toán.
 
 3.3 Biểu đồ sequence mô tả hành vi
 Dưới đây là các bước của ca sử dụng:
