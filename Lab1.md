@@ -117,14 +117,14 @@ Dựa trên ca sử dụng, các lớp phân tích được xác định như sa
 
 3.3 Biểu đồ sequence mô tả hành vi
 Dưới đây là các bước của ca sử dụng:
--Sinh viên yêu cầu thanh toán học phí.
--Hệ thống truy xuất thông tin từ các khóa học đã đăng ký.
--Hệ thống tính tổng số tiền cần thanh toán.
--Hệ thống tạo hóa đơn.
--Gửi yêu cầu thanh toán tới hệ thống BillingSystem.
--Nhận phản hồi từ BillingSystem.
--Cập nhật trạng thái hóa đơn và thông báo kết quả cho sinh viên.
-Biểu đồ sequence:
+* Sinh viên yêu cầu thanh toán học phí.
+* Hệ thống truy xuất thông tin từ các khóa học đã đăng ký.
+* Hệ thống tính tổng số tiền cần thanh toán.
+* Hệ thống tạo hóa đơn.
+* Gửi yêu cầu thanh toán tới hệ thống BillingSystem.
+* Nhận phản hồi từ BillingSystem.
+* Cập nhật trạng thái hóa đơn và thông báo kết quả cho sinh viên.
+* Biểu đồ sequence:
 ![Diagram](https://www.planttext.com/api/plantuml/png/X9113e8m44NtdA9BM7W15YxKcBWZSe86lgH9QR4p9U5iBZoILx2ca8X2s4td__VpEw_7isHVmx3OxKKXXpQCXRCLYAmJkN2uUn2FIfebVvx0JH6vQC1ND8eO3lNHUaUW5IYgaJa3AwwBwQsgFhRAGJB6TygMfGxOCdLGMYlJb4CeqWQsY-Bq2nL3Jc2fD6N9tBvyY2wkIfRiQQEgx-fGDLhJ6RXrFsDPtORY6_aDU0C00F__0m00)
 
 3.4 Nhiệm vụ của từng lớp phân tích
@@ -208,7 +208,7 @@ Quan hệ giữa các lớp đảm bảo tính liên kết và chức năng củ
 
 5.1 Giới thiệu
 
-Tài liệu này hợp nhất kết quả phân tích của hai ca sử dụng Payment và Maintain Timecard để tạo ra một mô hình tổng thể. Hệ thống hỗ trợ quản lý thanh toán và thông tin timecard của nhân viên một cách hiệu quả.
+* Tài liệu này hợp nhất kết quả phân tích của hai ca sử dụng Payment và Maintain Timecard để tạo ra một mô hình tổng thể. Hệ thống hỗ trợ quản lý thanh toán và thông tin timecard của nhân viên một cách hiệu quả.
 
 5.2 Các lớp phân tích
 Dựa trên hai ca sử dụng, các lớp phân tích chính bao gồm:
@@ -230,8 +230,11 @@ Hệ thống cung cấp thông tin hóa đơn liên quan đến các khóa học
 
 5.3 Biểu đồ Sequence
  * Thanh toán (Payment)
+
 ![Diagram](https://www.planttext.com/api/plantuml/png/N94xRiCm38PtdOB8tWjuA08xBJmAyGaKcKq9wE6ArE2pTUYHUeL8QUp6tWJzt_y0-FlzSsGnIR9tobY92TxyvEACgARoJPOc4mGENSo94Svu9PPaX6A0OMP1Vm33q9s7BT-ISnIkpqoxGxIPFPP7RyBeCDqPtIkr382NrvhRbDAlZ2mmFGmZYY77geYLQGloZc8_uL9ALxKTdW8afx2L7-Qbh84JyUJCVASs6tJVm90ldjO5IlTBiKxH8lEg_BLMInV31oM_y_ptxNJWR6kIEc8OwpLk0000__y30000)
+
  * Duy trì Timecard (Maintain Timecard)
+
 ![Diagram](https://www.planttext.com/api/plantuml/png/R94_JiCm5CPtd-Af4moeUmTKAG9bQLMHNE3L_YX6jXFibvIUZO4ZSGNSfcb4X4Vxz_sJVxw-rqauIkUTOYrDf2VVkkO4g3PVMsrR3aABsdfeZgRaO1pYWZXHNVvbTh5vXvOD1px08qXrIW9_ONURwd_3mQbGQiobXyVilA8NV7H8Gd85wQwtE2xPc6NN6XOi3Hm4zwekBvhYh95eqOFmQPFOSBYf5JkXBOuqvYhAfox6j28YMrB8n4s2OAxUkVsAdY7wZTfX9Ed68AdyCFMLBWRYdgtZlSECdC-hkhstGiEKHD9CkTEUYlEM_2S3DIT6ozo-2QysUagTraX9hNFryu_-0W00__y30000)
 
 5.4 Biểu đồ lớp hợp nhất
