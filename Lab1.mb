@@ -100,4 +100,29 @@ Lưu lại các thao tác quan trọng để kiểm tra và xử lý sự cố s
 Sử dụng công cụ logging như Log4j để ghi lại các thao tác như đăng nhập, đăng ký khóa học, hoặc cập nhật điểm.
 
 3. Phân tích ca sử dụng Payment
+-- Mô tả ca sử dụng
+Mục tiêu: Hệ thống xử lý việc thanh toán tiền học phí của sinh viên. Ca sử dụng này bao gồm:
+Hệ thống tính toán số tiền cần thanh toán dựa trên lịch đăng ký khóa học của sinh viên.
+Gửi thông tin đến hệ thống thanh toán hoặc phát hành hóa đơn.
+Xác nhận thanh toán thành công.
+
+-- Các lớp phân tích
+Dựa trên ca sử dụng, các lớp phân tích được xác định như sau:
+Student:	Đại diện cho sinh viên, chứa thông tin cá nhân và danh sách khóa học đã đăng ký.
+Course:	Đại diện cho khóa học, chứa thông tin về học phí và thời gian.
+PaymentProcessor:	Lớp xử lý thanh toán, tính toán học phí, kiểm tra số dư, và gửi thông tin tới hệ thống thanh toán.
+Invoice:	Đại diện cho hóa đơn thanh toán, chứa thông tin chi tiết về số tiền cần thanh toán và trạng thái.
+BillingSystem:	Hệ thống thanh toán bên ngoài, xử lý giao dịch thanh toán.
+
+-- Biểu đồ sequence mô tả hành vi
+Dưới đây là các bước của ca sử dụng:
+-Sinh viên yêu cầu thanh toán học phí.
+-Hệ thống truy xuất thông tin từ các khóa học đã đăng ký.
+-Hệ thống tính tổng số tiền cần thanh toán.
+-Hệ thống tạo hóa đơn.
+-Gửi yêu cầu thanh toán tới hệ thống BillingSystem.
+-Nhận phản hồi từ BillingSystem.
+-Cập nhật trạng thái hóa đơn và thông báo kết quả cho sinh viên.
+Biểu đồ sequence:
 ![Diagram](https://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoioF3qH19LcbMNqjnJqg9QHR_ors4VqmOTojBeMgyiLRUUsdwPJHRLOd636bfIq9KCuOnV98zqMbDybpIKA4Iy9DfwHGNBfysOa5I3F9zBnHNekTn1WZGkSmuXeZwwTahEoeZSc7H1DtvD0ytn65tyUTYaoQns6b_-G78nwPQ64o75m6FvmMmq63ly97bwgpthCpAqkQ8eCPG_jmaIy-DV1y-SgWlJimovTl35f1UOs5WSF3uwv4uAXE46NlbXbdTYpbUsiBL9xWfbAWGNQNC6r1wzxtd5NQrjNclchNjhkMQG6DHSHuhv_fM4ZsPAFiDBehksvsLsujbjRjLwcibiZhkeQYOsiBYvvdg6diRfY_aIyNfSo2pB1tavezm_fZKQ6Dr3OoTNvjGokRbfeW2IkXwc2kOv0lVWb8yiKV3H7Bbty9qAyF2Zh-UkSnf76--CqtJj5nxxTaoafZVKfDl1rZx0AT80-Bh-z_0000__y30000)
+
