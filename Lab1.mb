@@ -1,4 +1,29 @@
-![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3fTZJcPogeAkdO9JVfALGaHcda9onk45-Ln0he8kK1WiRwNW319KI7guQs4UcXQFmrjo5V8IAo6I2YKP3tVjLyW3ghP7DyCl_V22IeKCcFhaXxkN9ogK7DwIgV1mzzGyBeVKl1IGYm00003__mC0)
-![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO9ZNcPkOev2DPS22EGbvgPQAGIN56NcfKD4YWjI4xCrDAqKml8pKxXgeRfSyjCLKYjAKlDIq4r8IYm2AtS_lAWKJ825uHgT4qi8QFHDpGTXe60jbmDG7SYf00000F__0m00)
-![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3XUOmMNbb_5mrze2XP332p8LiZFo7-vQd6SD5yq5aYL0uOUxLfPQSsMcAMX09OvCFBmhBrsX14cNGjdX1IWQx3KLIZ9IynGqaWzlrkHI00AhaABIIeLai0ab6OSNv6Ke91_UafTkpPMQKvoge96T0U91rJeztBKm3sJHOeKyYAN5YPceDeAexSbehapDIybC0_eklu3B0SW6UHK0003__mC0)
+1. Phân tích kiến trúc hệ thống
+-- Kiến trúc đề xuất:
+Mô hình Client-Server kết hợp với kiến trúc 3 lớp (Three-tier architecture):
+  * Lớp trình bày (Presentation Layer): Giao diện người dùng (UI) chạy trên máy tính cá nhân của sinh viên, giáo viên, và quản trị viên. Giao diện này sẽ tuân thủ chuẩn Windows 95/98 như được yêu cầu.
+  * Lớp ứng dụng (Application Layer): Máy chủ ứng dụng (Application Server) chịu trách nhiệm xử lý logic nghiệp vụ như đăng ký môn học, tính toán chi phí, kiểm tra điều kiện tham gia khóa học, và xử lý dữ liệu.
+  * Lớp dữ liệu (Data Layer): Bao gồm cơ sở dữ liệu khóa học hiện tại (Ingres RDBMS) trên hệ thống DEC VAX và các cơ sở dữ liệu mới có thể được thêm để quản lý thông tin sinh viên, lịch học, và bảng điểm.
+-- Lý do lựa chọn kiến trúc này:
+Khả năng mở rộng: Kiến trúc 3 lớp dễ dàng mở rộng khi số lượng sinh viên, giáo viên, hoặc dữ liệu tăng lên.
+  * Tích hợp hệ thống cũ: Kiến trúc hỗ trợ việc truy cập vào cơ sở dữ liệu khóa học cũ thông qua giao diện SQL mở, đáp ứng yêu cầu tích hợp.
+  * Phân chia nhiệm vụ: Giảm tải cho lớp trình bày bằng cách chuyển logic xử lý xuống lớp ứng dụng, đồng thời đảm bảo dữ liệu được bảo mật tại lớp dữ liệu.
+  * Hiệu năng: Hỗ trợ tới 2000 người dùng đồng thời như yêu cầu và tối ưu hóa truy vấn đến cơ sở dữ liệu cũ bằng xử lý trung gian tại lớp ứng dụng.
+-- Các thành phần kiến trúc chính:
+Client (Sinh viên/Giảng viên/Quản trị viên):
+Giao diện desktop cho phép thực hiện các tác vụ như đăng nhập, chọn khóa học, xem bảng điểm.
+Application Server:
+  * Module Đăng ký khóa học: Đảm bảo việc xử lý đăng ký khóa học, kiểm tra số lượng sinh viên tham gia, và xử lý thay đổi trong thời gian add/drop.
+  * Module Xử lý bảng điểm: Cung cấp khả năng nhập điểm của giảng viên và xem điểm của sinh viên.
+  * Module Bảo mật: Quản lý quyền truy cập, đảm bảo dữ liệu được bảo mật.
+Database Layer:
+  * Cơ sở dữ liệu khóa học (Legacy): Truy xuất thông tin khóa học cũ, nhưng không cập nhật.
+  * Cơ sở dữ liệu mới: Lưu trữ thông tin về sinh viên, giảng viên, lịch học, bảng điểm, và các giao dịch.
+-- Biểu đồ package (Package Diagram):
+![Diagram](https://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoihttps://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoioF3qH19LcbMNqjnJqg9QHR_ors4VqmOTojBeMgyiLRUUsdwPJHRLOd636bfIq9KCuOnV98zqMbDybpIKA4Iy9DfwHGNBfysOa5I3F9zBnHNekTn1WZGkSmuXeZwwTahEoeZSc7H1DtvD0ytn65tyUTYaoQns6b_-G78nwPQ64o75m6FvmMmq63ly97bwgpthCpAqkQ8eCPG_jmaIy-DV1y-SgWlJimovTl35f1UOs5WSF3uwv4uAXE46NlbXbdTYpbUsiBL9xWfbAWGNQNC6r1wzxtd5NQrjNclchNjhkMQG6DHSHuhv_fM4ZsPAFiDBehksvsLsujbjRjLwcibiZhkeQYOsiBYvvdg6diRfY_aIyNfSo2pB1tavezm_fZKQ6Dr3OoTNvjGokRbfeW2IkXwc2kOv0lVWb8yiKV3H7Bbty9qAyF2Zh-UkSnf76--CqtJj5nxxTaoafZVKfDl1rZx0AT80-Bh-z_0000__y30000)
+-- Ý nghĩa các thành phần:
+  * Client: Cung cấp giao diện dễ sử dụng cho người dùng cuối, giúp họ tương tác với hệ thống.
+  * Application Server: Xử lý logic nghiệp vụ, tối ưu hóa hiệu suất hệ thống và cung cấp các API để truy cập dữ liệu.
+  * Data Layer: Đảm bảo lưu trữ dữ liệu an toàn, truy cập nhanh chóng và khả năng tích hợp hệ thống cũ.
 
+2. Cơ chế phân tích
