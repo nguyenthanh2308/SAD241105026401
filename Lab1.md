@@ -125,6 +125,7 @@ Dưới đây là các bước của ca sử dụng:
 * Nhận phản hồi từ BillingSystem.
 * Cập nhật trạng thái hóa đơn và thông báo kết quả cho sinh viên.
 * Biểu đồ sequence:
+  
 ![Diagram](https://www.planttext.com/api/plantuml/png/X9113e8m44NtdA9BM7W15YxKcBWZSe86lgH9QR4p9U5iBZoILx2ca8X2s4td__VpEw_7isHVmx3OxKKXXpQCXRCLYAmJkN2uUn2FIfebVvx0JH6vQC1ND8eO3lNHUaUW5IYgaJa3AwwBwQsgFhRAGJB6TygMfGxOCdLGMYlJb4CeqWQsY-Bq2nL3Jc2fD6N9tBvyY2wkIfRiQQEgx-fGDLhJ6RXrFsDPtORY6_aDU0C00F__0m00)
 
 3.4 Nhiệm vụ của từng lớp phân tích
