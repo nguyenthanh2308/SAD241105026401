@@ -23,7 +23,8 @@ Cơ sở dữ liệu khóa học (Legacy): Truy xuất thông tin khóa học c�
 Cơ sở dữ liệu mới: Lưu trữ thông tin về sinh viên, giảng viên, lịch học, bảng điểm, và các giao dịch.
 
 -- Biểu đồ package (Package Diagram):
-[!dỉ]
+![Diagram]https://www.planttext.com/api/plantuml/png/b5J1JeD04Btp5HDEUcYyUp25aXYILckRwiNB5gQu4NR9iiIWySiy-4d-WhCiK1QR9fvWPzwRUViUuUVhUrvffdHTv5x9abUM8VXhXHKApJIN0fQiGUN3XmUGoAAKWZhWRtMTcfT5pkdX0wkWAzcAYruhUS2gacgC7ugd645QS06xk4MsXrtiVNf7ZK5PvZmv9t636Q-qif0L4qGh-jtZtfHLIaNtOYer2XDIo4NMaKpBT2PUO58hhXjOoRJEqPhHrLpa4ZEMD12540kDwi0IYxRreUPSD6AQZM-OqddFAXocBMIjw1Y5p-8Y5Xbb1vieN6qlHwEZq67UuLiV5qHTbTWRp5j7M4xJB9sGn2KzJhemczqu7i9rxpUggqTEuwsgolScCNVKtab3tDRxWcjBkrKiDQmkyfEBR9QjSD_pdAw1JymqZ8SQLGEz-orl9E4_fCck8Nh21xL-aOg_jzq_2yuWlUdoeo3wKbfdMJgx5ta3GM8-o1D2sfnwxDKJRS8Hs55o3Zf7aPfVmIy0003__mC0
+
 -- Ý nghĩa các thành phần:
 Client: Cung cấp giao diện dễ sử dụng cho người dùng cuối, giúp họ tương tác với hệ thống.
 Application Server: Xử lý logic nghiệp vụ, tối ưu hóa hiệu suất hệ thống và cung cấp các API để truy cập dữ liệu.
