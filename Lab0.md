@@ -1,7 +1,3 @@
-![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3fTZJcPogeAkdO9JVfALGaHcda9onk45-Ln0he8kK1WiRwNW319KI7guQs4UcXQFmrjo5V8IAo6I2YKP3tVjLyW3ghP7DyCl_V22IeKCcFhaXxkN9ogK7DwIgV1mzzGyBeVKl1IGYm00003__mC0)
-![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO9ZNcPkOev2DPS22EGbvgPQAGIN56NcfKD4YWjI4xCrDAqKml8pKxXgeRfSyjCLKYjAKlDIq4r8IYm2AtS_lAWKJ825uHgT4qi8QFHDpGTXe60jbmDG7SYf00000F__0m00)
-![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3XUOmMNbb_5mrze2XP332p8LiZFo7-vQd6SD5yq5aYL0uOUxLfPQSsMcAMX09OvCFBmhBrsX14cNGjdX1IWQx3KLIZ9IynGqaWzlrkHI00AhaABIIeLai0ab6OSNv6Ke91_UafTkpPMQKvoge96T0U91rJeztBKm3sJHOeKyYAN5YPceDeAexSbehapDIybC0_eklu3B0SW6UHK0003__mC0)
-
 1. Phân tích kiến trúc hệ thống
 -- Kiến trúc đề xuất:
 Mô hình Client-Server kết hợp với kiến trúc 3 lớp (Three-tier architecture):
@@ -27,7 +23,8 @@ Database Layer:
   * Cơ sở dữ liệu mới: Lưu trữ thông tin về sinh viên, giảng viên, lịch học, bảng điểm, và các giao dịch.
 
 -- Biểu đồ package (Package Diagram):
-![Diagram](https://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoihttps://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoioF3qH19LcbMNqjnJqg9QHR_ors4VqmOTojBeMgyiLRUUsdwPJHRLOd636bfIq9KCuOnV98zqMbDybpIKA4Iy9DfwHGNBfysOa5I3F9zBnHNekTn1WZGkSmuXeZwwTahEoeZSc7H1DtvD0ytn65tyUTYaoQns6b_-G78nwPQ64o75m6FvmMmq63ly97bwgpthCpAqkQ8eCPG_jmaIy-DV1y-SgWlJimovTl35f1UOs5WSF3uwv4uAXE46NlbXbdTYpbUsiBL9xWfbAWGNQNC6r1wzxtd5NQrjNclchNjhkMQG6DHSHuhv_fM4ZsPAFiDBehksvsLsujbjRjLwcibiZhkeQYOsiBYvvdg6diRfY_aIyNfSo2pB1tavezm_fZKQ6Dr3OoTNvjGokRbfeW2IkXwc2kOv0lVWb8yiKV3H7Bbty9qAyF2Zh-UkSnf76--CqtJj5nxxTaoafZVKfDl1rZx0AT80-Bh-z_0000__y30000)
+
+![Diagram](https://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoioF3qH19LcbMNqjnJqg9QHR_ors4VqmOTojBeMgyiLRUUsdwPJHRLOd636bfIq9KCuOnV98zqMbDybpIKA4Iy9DfwHGNBfysOa5I3F9zBnHNekTn1WZGkSmuXeZwwTahEoeZSc7H1DtvD0ytn65tyUTYaoQns6b_-G78nwPQ64o75m6FvmMmq63ly97bwgpthCpAqkQ8eCPG_jmaIy-DV1y-SgWlJimovTl35f1UOs5WSF3uwv4uAXE46NlbXbdTYpbUsiBL9xWfbAWGNQNC6r1wzxtd5NQrjNclchNjhkMQG6DHSHuhv_fM4ZsPAFiDBehksvsLsujbjRjLwcibiZhkeQYOsiBYvvdg6diRfY_aIyNfSo2pB1tavezm_fZKQ6Dr3OoTNvjGokRbfeW2IkXwc2kOv0lVWb8yiKV3H7Bbty9qAyF2Zh-UkSnf76--CqtJj5nxxTaoafZVKfDl1rZx0AT80-Bh-z_0000__y30000)
 
 -- Ý nghĩa các thành phần:
   * Client: Cung cấp giao diện dễ sử dụng cho người dùng cuối, giúp họ tương tác với hệ thống.
@@ -128,5 +125,39 @@ Dưới đây là các bước của ca sử dụng:
 -Nhận phản hồi từ BillingSystem.
 -Cập nhật trạng thái hóa đơn và thông báo kết quả cho sinh viên.
 Biểu đồ sequence:
-![Diagram](https://www.planttext.com/api/plantuml/png/Z9InJkD048PxFyN81N05Ia-1I8X04G6XM51Tiwm7UqMyQ-skWmBY8QXfG5TSTRe-AIXu4Z_1lSAjlJPPnqwKAl7l-NR-sN_aVylF4wM9r5aozL927qY4u5zBLCWrqKnm69CvIX-UFG0gabHmymRyG6TXyUTqoioF3qH19LcbMNqjnJqg9QHR_ors4VqmOTojBeMgyiLRUUsdwPJHRLOd636bfIq9KCuOnV98zqMbDybpIKA4Iy9DfwHGNBfysOa5I3F9zBnHNekTn1WZGkSmuXeZwwTahEoeZSc7H1DtvD0ytn65tyUTYaoQns6b_-G78nwPQ64o75m6FvmMmq63ly97bwgpthCpAqkQ8eCPG_jmaIy-DV1y-SgWlJimovTl35f1UOs5WSF3uwv4uAXE46NlbXbdTYpbUsiBL9xWfbAWGNQNC6r1wzxtd5NQrjNclchNjhkMQG6DHSHuhv_fM4ZsPAFiDBehksvsLsujbjRjLwcibiZhkeQYOsiBYvvdg6diRfY_aIyNfSo2pB1tavezm_fZKQ6Dr3OoTNvjGokRbfeW2IkXwc2kOv0lVWb8yiKV3H7Bbty9qAyF2Zh-UkSnf76--CqtJj5nxxTaoafZVKfDl1rZx0AT80-Bh-z_0000__y30000)
 
+![Diagram](https://www.planttext.com/api/plantuml/png/X9113e8m44NtdA9BM7W15YxKcBWZSe86lgH9QR4p9U5iBZoILx2ca8X2s4td__VpEw_7isHVmx3OxKKXXpQCXRCLYAmJkN2uUn2FIfebVvx0JH6vQC1ND8eO3lNHUaUW5IYgaJa3AwwBwQsgFhRAGJB6TygMfGxOCdLGMYlJb4CeqWQsY-Bq2nL3Jc2fD6N9tBvyY2wkIfRiQQEgx-fGDLhJ6RXrFsDPtORY6_aDU0C00F__0m00)
+
+-- Nhiệm vụ của từng lớp phân tích
+-Student:
+Lưu trữ thông tin cá nhân của sinh viên.
+Cung cấp danh sách các khóa học đã đăng ký.
+-Course:
+Cung cấp thông tin học phí cho từng khóa học.
+-PaymentProcessor:
+Xử lý logic nghiệp vụ liên quan đến thanh toán.
+Tính toán tổng học phí dựa trên các khóa học đã đăng ký.
+Tạo và quản lý hóa đơn.
+Giao tiếp với BillingSystem để thực hiện giao dịch.
+-Invoice:
+Lưu trữ thông tin hóa đơn như tổng tiền, trạng thái thanh toán (chưa thanh toán, đã thanh toán).
+-BillingSystem:
+Hệ thống bên ngoài chịu trách nhiệm xử lý các giao dịch thanh toán.
+
+-- Mô tả các quan hệ
+-Student và Course:
+Mối quan hệ "nhiều-nhiều" (Many-to-Many). Một sinh viên có thể đăng ký nhiều khóa học, và một khóa học có thể được nhiều sinh viên tham gia.
+-PaymentProcessor với các lớp khác:
+PaymentProcessor tương tác với tất cả các lớp để thực hiện quy trình thanh toán.
+-Invoice và PaymentProcessor:
+PaymentProcessor chịu trách nhiệm tạo, cập nhật trạng thái cho Invoice.
+-BillingSystem:
+Mối quan hệ một chiều, PaymentProcessor gửi thông tin thanh toán và nhận phản hồi từ BillingSystem.
+
+-- Giải thích
+Tách biệt trách nhiệm:
+Các lớp được thiết kế để đảm nhiệm một nhiệm vụ duy nhất, dễ bảo trì và mở rộng.
+Dựa trên thực thể thực tế:
+Các lớp phản ánh trực tiếp các thực thể trong hệ thống: sinh viên, khóa học, hóa đơn, và hệ thống thanh toán.
+Hỗ trợ mở rộng:
+Có thể thêm các phương thức hoặc lớp mới, ví dụ hỗ trợ nhiều hình thức thanh toán mà không làm gián đoạn hệ thống hiện tại.
