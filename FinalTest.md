@@ -60,3 +60,5 @@
       - Permissions: list of permissions.
     - Hành vi:
       - AuthenticateUser(), AssignRole(), LogAccess().
+     
+      - Nguyễn Minh thành
